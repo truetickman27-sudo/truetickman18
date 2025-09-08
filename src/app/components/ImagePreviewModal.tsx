@@ -1,6 +1,7 @@
 "use client";
 
 import React from 'react';
+import Image from 'next/image';
 import styled from 'styled-components';
 
 interface ImagePreviewModalProps {
@@ -32,7 +33,14 @@ const ImagePreviewModal: React.FC<ImagePreviewModalProps> = ({
             ×
           </button>
           <div className="image-container">
-            <img src={imageUrl} alt={title} className="preview-image" />
+            <Image 
+              src={imageUrl} 
+              alt={title} 
+              width={800}
+              height={600}
+              className="preview-image"
+              style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }}
+            />
           </div>
           <div className="image-title">
             <h3>{title}</h3>

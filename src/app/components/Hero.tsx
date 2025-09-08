@@ -8,10 +8,13 @@ const Hero = () => {
     <section className="relative min-h-[70vh] md:min-h-[85vh] flex items-center justify-center px-4 md:px-8 lg:px-16 overflow-hidden">
       {/* Background Neymar image - centered behind text */}
       <div className="absolute inset-0 flex items-center justify-center z-10">
-        <img 
+        <Image 
           src="/images/neymar-background.png" 
           alt="Neymar Jr. Background" 
+          width={800}
+          height={600}
           className="w-auto h-full max-w-none object-cover opacity-100"
+          priority
         />
         {/* Gradient blend overlay at the bottom only */}
         <div className="absolute bottom-0 left-0 right-0 h-48 md:h-64 bg-gradient-to-t from-red-700 via-red-600/60 via-red-600/30 via-red-600/10 to-transparent pointer-events-none"></div>

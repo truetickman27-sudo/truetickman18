@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
+import Image from 'next/image';
 import styled from 'styled-components';
 import ImagePreviewModal from './ImagePreviewModal';
 
@@ -36,7 +37,13 @@ const ProductCard: React.FC<ProductCardProps> = ({
         <div className="wrapper">
           <div className="card-image" onClick={handleImageClick}>
             {image.startsWith('http') || image.startsWith('/') ? (
-              <img src={image} alt={title} />
+              <Image 
+                src={image} 
+                alt={title} 
+                width={200}
+                height={200}
+                style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '5px' }}
+              />
             ) : (
               image
             )}
@@ -144,14 +151,6 @@ const StyledWrapper = styled.div`
     }
   }
   
-  .card-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 5px;
-    transition: transform 0.3s ease;
-  }
-  
   .preview-overlay {
     position: absolute;
     top: 0;
@@ -182,10 +181,6 @@ const StyledWrapper = styled.div`
   
   .card-image:hover .preview-overlay {
     opacity: 1;
-  }
-  
-  .card-image:hover img {
-    transform: scale(1.05);
   }
   
   .content {
