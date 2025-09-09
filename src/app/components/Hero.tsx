@@ -22,7 +22,7 @@ const Hero = () => {
 
       {/* Main MAYURESH Text - centered over background image */}
       <div className="relative z-20 text-center px-4">
-        <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[12rem] 2xl:text-[14rem] font-black leading-none tracking-tight">
+        <h1 className="text-7xl sm:text-8xl md:text-9xl lg:text-[10rem] xl:text-[12rem] 2xl:text-[14rem] font-black leading-none tracking-tight">
           <span className="text-transparent bg-clip-text bg-gradient-to-b from-white/40 to-white/20 stroke-white stroke-1 md:stroke-2">
             MAYURESH
           </span>
