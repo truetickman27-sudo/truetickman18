@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-import { ShoppingCart, ChevronRight } from 'lucide-react';
 
 const Header = () => {
   return (
@@ -28,15 +27,9 @@ const Header = () => {
         </a>
       </nav>
 
-      {/* Right side with Shop and Cart */}
-      <div className="flex items-center space-x-4 md:space-x-6">
-        <Link href="/shop" className="hidden md:flex items-center space-x-2 hover:text-gray-200 transition-all duration-300 cursor-pointer group">
-          <span className="font-semibold text-sm lg:text-base tracking-wide">SHOP</span>
-          <ChevronRight size={16} className="md:w-[18px] md:h-[18px] transform group-hover:translate-x-1 transition-transform" />
-        </Link>
-        <div className="cursor-pointer hover:text-gray-200 transition-all duration-300 hover:scale-110 transform">
-          <ShoppingCart size={20} className="md:w-[22px] md:h-[22px]" strokeWidth={2} />
-        </div>
+      {/* Navigation end spacer */}
+      <div className="flex items-center">
+        {/* Spacer for responsive layout */}
       </div>
 
       {/* Mobile menu button */}

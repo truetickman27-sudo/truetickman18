@@ -29,18 +29,6 @@ const Hero = () => {
         </h1>
       </div>
 
-      {/* Shop Latest Button */}
-      <div className="absolute bottom-6 md:bottom-12 left-4 md:left-8 lg:left-16 z-30">
-        <button className="flex items-center space-x-2 md:space-x-3 text-white hover:text-gray-200 transition-all duration-300 group">
-          <span className="font-bold tracking-wider text-xs md:text-sm lg:text-base">SHOP LATEST</span>
-          <div className="w-6 h-6 md:w-8 md:h-8 border-2 border-white rounded-full flex items-center justify-center group-hover:border-gray-200 group-hover:scale-110 transition-all duration-300">
-            <svg width="10" height="10" viewBox="0 0 12 12" fill="none" className="md:w-3 md:h-3 transform group-hover:translate-x-0.5 transition-transform">
-              <path d="M1 6h10M7 2l4 4-4 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-            </svg>
-          </div>
-        </button>
-      </div>
-
       {/* Decorative elements */}
       <div className="absolute top-1/4 right-1/4 w-1.5 h-1.5 md:w-2 md:h-2 bg-white/20 rounded-full animate-pulse z-10"></div>
       <div className="absolute bottom-1/3 right-1/3 w-1 h-1 bg-white/30 rounded-full animate-pulse delay-1000 z-10"></div>

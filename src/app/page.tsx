@@ -12,7 +12,7 @@ export default function Home() {
       {/* Additional sections */}
       <section className="py-10 md:py-20 px-4 md:px-8 lg:px-16">
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 text-white">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 text-white">
             {/* Latest News */}
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 md:p-6 hover:bg-white/15 transition-all duration-300">
               <h3 className="text-lg md:text-xl font-bold mb-3 md:mb-4 tracking-wide">LATEST NEWS</h3>
@@ -32,17 +32,6 @@ export default function Home() {
               </p>
               <button className="mt-3 md:mt-4 text-sm font-semibold hover:text-gray-200 transition-colors">
                 VIEW SCHEDULE →
-              </button>
-            </div>
-            
-            {/* Store */}
-            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 md:p-6 hover:bg-white/15 transition-all duration-300 md:col-span-2 lg:col-span-1">
-              <h3 className="text-lg md:text-xl font-bold mb-3 md:mb-4 tracking-wide">OFFICIAL STORE</h3>
-              <p className="text-gray-200 text-sm leading-relaxed">
-                Get the latest PSG jerseys, merchandise, and exclusive collections.
-              </p>
-              <button className="mt-3 md:mt-4 text-sm font-semibold hover:text-gray-200 transition-colors">
-                SHOP NOW →
               </button>
             </div>
           </div>

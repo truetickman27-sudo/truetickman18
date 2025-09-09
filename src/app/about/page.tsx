@@ -3,6 +3,7 @@
 import Header from "../components/Header";
 import ProfileCard from "../components/ProfileCard";
 import InstagramButton from "../components/InstagramButton";
+import Tooltip from "../components/Tooltip";
 
 export default function About() {
   return (
@@ -46,8 +47,9 @@ export default function About() {
             <h3 className="text-2xl md:text-3xl font-bold text-white mb-6 tracking-wide">
               CONNECT WITH ME
             </h3>
-            <div className="flex justify-center">
+            <div className="flex justify-center items-center gap-8">
               <InstagramButton link="https://www.instagram.com/being_mayu3esh?igsh=MW50Ym5oNHR5NjJmcA==" />
+              <Tooltip />
             </div>
           </div>
         </div>
