@@ -8,7 +8,18 @@ const Tooltip = () => {
         <div className="tooltip">
           <div className="profile">
             <div className="user">
-              <div className="img">M</div>
+              <div className="img">
+                <img 
+                  src="/images/profile-avatar.png" 
+                  alt="Mayuresh profile" 
+                  style={{
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'cover',
+                    borderRadius: '8px'
+                  }}
+                />
+              </div>
               <div className="details">
                 <div className="name">Mayuresh</div>
                 <div className="username">Mayuresh Samel</div>
@@ -169,6 +180,7 @@ const StyledWrapper = styled.div`
     align-items: center;
     justify-content: center;
     background: #fff;
+    overflow: hidden;
   }
   .name {
     font-size: 17px;
